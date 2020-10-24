@@ -56,15 +56,47 @@
 		047C8C20254450EA0060F3B7 /* PersonalApp */ = {
 			isa = PBXGroup;
 			children = (
-				047C8C21254450EA0060F3B7 /* AppDelegate.swift */,
-				047C8C23254450EA0060F3B7 /* SceneDelegate.swift */,
-				047C8C25254450EA0060F3B7 /* ViewController.swift */,
-				047C8C27254450EA0060F3B7 /* Main.storyboard */,
-				047C8C2A254450EE0060F3B7 /* Assets.xcassets */,
-				047C8C2C254450EE0060F3B7 /* LaunchScreen.storyboard */,
+				047C8C39254451B90060F3B7 /* Storyboards */,
+				047C8C372544516B0060F3B7 /* View Controllers */,
+				047C8C3A254451F90060F3B7 /* Resourses */,
+				047C8C3B2544523B0060F3B7 /* Supporting Fils */,
 				047C8C2F254450EE0060F3B7 /* Info.plist */,
 			);
 			path = PersonalApp;
+			sourceTree = "<group>";
+		};
+		047C8C372544516B0060F3B7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				047C8C25254450EA0060F3B7 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		047C8C39254451B90060F3B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				047C8C27254450EA0060F3B7 /* Main.storyboard */,
+				047C8C2C254450EE0060F3B7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		047C8C3A254451F90060F3B7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				047C8C2A254450EE0060F3B7 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		047C8C3B2544523B0060F3B7 /* Supporting Fils */ = {
+			isa = PBXGroup;
+			children = (
+				047C8C21254450EA0060F3B7 /* AppDelegate.swift */,
+				047C8C23254450EA0060F3B7 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Fils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G32U4R37V2;
 				INFOPLIST_FILE = PersonalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -296,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailPushkarev.PersonalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G32U4R37V2;
 				INFOPLIST_FILE = PersonalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,7 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MikhailPushkarev.PersonalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
