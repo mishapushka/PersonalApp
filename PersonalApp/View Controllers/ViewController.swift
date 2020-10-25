@@ -23,10 +23,15 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeUserVC = segue.destination as? WelcomeUserViewController else { return }
+        guard let welcomeUserVC =
+                segue.destination as? WelcomeUserViewController else { return }
         welcomeUserVC.welcomeUser = sender as? String
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+    }
+    
     @IBAction func loginInAction() {
     }
     

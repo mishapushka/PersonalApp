@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="530" y="63"/>
         </scene>
-        <!--Welcome User View Controller-->
+        <!--Home-->
         <scene sceneID="duA-EB-zy0">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="7uG-aF-6XA" customClass="WelcomeUserViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POOnuxZ-fD8" translatesAutoresizingMaskIntoConstraints="NO" id="mxs-bY-jNb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POOnuxZ-fD8" translatesAutoresizingMaskIntoConstraints="NO" id="mxs-bY-jNb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-40-f5b">
@@ -105,8 +105,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-ry-jfb">
                                         <rect key="frame" x="108.5" y="0.0" width="71" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" red="0.0" green="0.99759513139724731" blue="0.17305976152420044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ens-KG-aPs">
                                         <rect key="frame" x="121.5" y="52" width="45" height="48"/>
@@ -141,7 +140,7 @@
                             <constraint firstItem="AyF-dh-S92" firstAttribute="trailing" secondItem="mxs-bY-jNb" secondAttribute="trailing" id="uIK-nD-LCJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bookmark.circle.fill" catalog="system" id="ebX-hd-Iq9"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="bookmark.circle.fill" catalog="system" id="ebX-hd-Iq9"/>
                     <navigationItem key="navigationItem" id="vvE-SH-srm"/>
                     <connections>
                         <outlet property="logOutButton" destination="505-Vd-Ctt" id="eeA-t2-Lad"/>
@@ -151,6 +150,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GG-sL-O4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2409.375" y="61.267605633802816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d8x-8q-nR4">
+            <objects>
+                <viewController id="uiL-SD-BgP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6BW-Wc-udI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cd9-M3-eFG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VJD-tg-4FN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOa-VD-Isg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="822"/>
         </scene>
         <!--My Life-->
         <scene sceneID="CS9-Zf-Xo3">
@@ -163,6 +178,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Life" image="rosette" catalog="system" id="k0x-c0-kFU"/>
+                    <connections>
+                        <segue destination="bkc-IZ-ZhM" kind="show" identifier="MyLife" id="xSV-kU-zFu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLA-ag-9YV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,10 +197,100 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My hobbies" image="book" catalog="system" id="ZFL-Zf-Xoa"/>
+                    <connections>
+                        <segue destination="uiL-SD-BgP" kind="show" identifier="MyHobbies" id="x9A-6T-yhh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPs-qa-r8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2209" y="822"/>
+        </scene>
+        <!--Love Mountains🙏-->
+        <scene sceneID="6p2-GF-AOo">
+            <objects>
+                <viewController id="bli-ax-HM1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKg-yH-VFF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="я медитирую" translatesAutoresizingMaskIntoConstraints="NO" id="2hE-ZA-y5R">
+                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aXt-3c-5JH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2hE-ZA-y5R" firstAttribute="trailing" secondItem="aXt-3c-5JH" secondAttribute="trailing" id="8hH-DT-oGT"/>
+                            <constraint firstItem="2hE-ZA-y5R" firstAttribute="top" secondItem="aXt-3c-5JH" secondAttribute="top" id="FNJ-2o-lDi"/>
+                            <constraint firstItem="2hE-ZA-y5R" firstAttribute="bottom" secondItem="aXt-3c-5JH" secondAttribute="bottom" id="TXS-iZ-rbG"/>
+                            <constraint firstItem="2hE-ZA-y5R" firstAttribute="leading" secondItem="aXt-3c-5JH" secondAttribute="leading" id="gL4-qp-cRg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Love Mountains🙏" id="62O-SH-lhy"/>
+                    <connections>
+                        <segue destination="fcc-xB-fja" kind="show" identifier="loveFunnyPeople" id="b1f-4B-cjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlv-gI-wxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409.375" y="1671.1267605633802"/>
+        </scene>
+        <!--I love funny people😅-->
+        <scene sceneID="CKT-iP-in7">
+            <objects>
+                <viewController id="fcc-xB-fja" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BBk-Cy-aKa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="люблю веселые пати" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-Ls-pXB">
+                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z6k-4C-9xu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ADl-Ls-pXB" firstAttribute="bottom" secondItem="Z6k-4C-9xu" secondAttribute="bottom" id="5US-LM-HGm"/>
+                            <constraint firstItem="ADl-Ls-pXB" firstAttribute="trailing" secondItem="Z6k-4C-9xu" secondAttribute="trailing" id="DBc-1J-Bf5"/>
+                            <constraint firstItem="ADl-Ls-pXB" firstAttribute="leading" secondItem="Z6k-4C-9xu" secondAttribute="leading" id="X92-v4-kD5"/>
+                            <constraint firstItem="ADl-Ls-pXB" firstAttribute="top" secondItem="Z6k-4C-9xu" secondAttribute="top" id="YW0-ib-8BD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="I love funny people😅" id="5Oq-h2-w6w"/>
+                    <connections>
+                        <segue destination="ewQ-Fm-trH" kind="show" identifier="loveTravaling" id="BdU-Y6-w9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Al-Kd-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286.875" y="1670.0704225352113"/>
+        </scene>
+        <!--I like to Travel✈-->
+        <scene sceneID="L6i-Hz-jPs">
+            <objects>
+                <viewController id="ewQ-Fm-trH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnY-HM-5Ua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="люблю путешествовать" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-n7-jPS">
+                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vmz-7X-DDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jm9-n7-jPS" firstAttribute="leading" secondItem="vmz-7X-DDf" secondAttribute="leading" id="Y42-nD-ZQ9"/>
+                            <constraint firstItem="jm9-n7-jPS" firstAttribute="top" secondItem="vmz-7X-DDf" secondAttribute="top" id="leK-5Y-OKg"/>
+                            <constraint firstItem="jm9-n7-jPS" firstAttribute="trailing" secondItem="vmz-7X-DDf" secondAttribute="trailing" id="pJk-bk-8lx"/>
+                            <constraint firstItem="jm9-n7-jPS" firstAttribute="bottom" secondItem="vmz-7X-DDf" secondAttribute="bottom" id="rap-2E-XN1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="I like to Travel✈" id="OMe-Ff-sL4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2W-5j-8Nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4140" y="1670.0704225352113"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dpB-Pk-QUX">
@@ -203,12 +311,34 @@
             </objects>
             <point key="canvasLocation" x="1411.875" y="61.267605633802816"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YyU-xU-54r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkc-IZ-ZhM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xli-u3-Xag"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="284-DF-Ehq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bli-ax-HM1" kind="relationship" relationship="rootViewController" id="Cgn-IQ-I7e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXA-lV-lSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411.875" y="1671.1267605633802"/>
+        </scene>
     </scenes>
     <resources>
         <image name="POOnuxZ-fD8" width="960" height="960"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="bookmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
+        <image name="люблю веселые пати" width="1000" height="750"/>
+        <image name="люблю путешествовать" width="1085" height="1080"/>
+        <image name="я медитирую" width="1280" height="854"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
