@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="530" y="63"/>
         </scene>
-        <!--Home-->
+        <!--About Mikhail Pushkarev-->
         <scene sceneID="duA-EB-zy0">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="7uG-aF-6XA" customClass="WelcomeUserViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="bookmark.circle.fill" catalog="system" id="ebX-hd-Iq9"/>
-                    <navigationItem key="navigationItem" id="vvE-SH-srm"/>
+                    <navigationItem key="navigationItem" title="About Mikhail Pushkarev" id="vvE-SH-srm"/>
                     <connections>
                         <outlet property="logOutButton" destination="505-Vd-Ctt" id="eeA-t2-Lad"/>
                         <outlet property="welcomeUserLabel" destination="Ehr-ry-jfb" id="ljg-dO-XMn"/>
@@ -151,40 +151,128 @@
             </objects>
             <point key="canvasLocation" x="2409.375" y="61.267605633802816"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo pose🤩-->
         <scene sceneID="d8x-8q-nR4">
             <objects>
                 <viewController id="uiL-SD-BgP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6BW-Wc-udI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2020-10-25 11.25.05" translatesAutoresizingMaskIntoConstraints="NO" id="SjL-kG-vAx">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cd9-M3-eFG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SjL-kG-vAx" firstAttribute="leading" secondItem="cd9-M3-eFG" secondAttribute="leading" id="d8C-Tm-fCd"/>
+                            <constraint firstItem="SjL-kG-vAx" firstAttribute="top" secondItem="cd9-M3-eFG" secondAttribute="top" id="dBt-2P-M1n"/>
+                            <constraint firstItem="SjL-kG-vAx" firstAttribute="bottom" secondItem="cd9-M3-eFG" secondAttribute="bottom" id="hoI-w3-h4A"/>
+                            <constraint firstItem="SjL-kG-vAx" firstAttribute="trailing" secondItem="cd9-M3-eFG" secondAttribute="trailing" id="pBV-ZA-FxD"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VJD-tg-4FN"/>
+                    <navigationItem key="navigationItem" title="Photo pose🤩" id="VJD-tg-4FN">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="hBw-Lz-Ptl">
+                            <connections>
+                                <segue destination="NLo-mt-u2x" kind="show" id="tSk-Cn-QhY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOa-VD-Isg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3319" y="822"/>
+            <point key="canvasLocation" x="5096.25" y="821.83098591549299"/>
+        </scene>
+        <!--Photos of sunsets😍-->
+        <scene sceneID="Y2U-Eh-y2E">
+            <objects>
+                <viewController id="NLo-mt-u2x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZF-nr-4jV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фото заката" translatesAutoresizingMaskIntoConstraints="NO" id="gPH-9V-gua">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAJ-cr-Pyl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPH-9V-gua" firstAttribute="trailing" secondItem="bAJ-cr-Pyl" secondAttribute="trailing" id="DIZ-MB-CvE"/>
+                            <constraint firstItem="gPH-9V-gua" firstAttribute="top" secondItem="bAJ-cr-Pyl" secondAttribute="top" id="IIZ-nA-KoT"/>
+                            <constraint firstItem="gPH-9V-gua" firstAttribute="bottom" secondItem="bAJ-cr-Pyl" secondAttribute="bottom" id="Rd6-b4-tp8"/>
+                            <constraint firstItem="gPH-9V-gua" firstAttribute="leading" secondItem="bAJ-cr-Pyl" secondAttribute="leading" id="roH-1q-StS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photos of sunsets😍" id="cCV-r7-any">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="zxA-Xu-Y7I">
+                            <connections>
+                                <segue destination="l5C-fw-q17" kind="show" identifier="yourPicture" id="jSA-QN-3aX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBP-4S-QaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6009.375" y="821.83098591549299"/>
+        </scene>
+        <!--Your picture😎-->
+        <scene sceneID="OKL-dv-SpA">
+            <objects>
+                <viewController id="l5C-fw-q17" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNE-1J-B65">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_4873" translatesAutoresizingMaskIntoConstraints="NO" id="t5G-1O-H6K">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tRF-zk-QH2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t5G-1O-H6K" firstAttribute="bottom" secondItem="tRF-zk-QH2" secondAttribute="bottom" id="122-cU-IrR"/>
+                            <constraint firstItem="t5G-1O-H6K" firstAttribute="trailing" secondItem="tRF-zk-QH2" secondAttribute="trailing" id="2yU-lQ-CKn"/>
+                            <constraint firstItem="t5G-1O-H6K" firstAttribute="leading" secondItem="tRF-zk-QH2" secondAttribute="leading" id="RXz-EF-5nF"/>
+                            <constraint firstItem="t5G-1O-H6K" firstAttribute="top" secondItem="tRF-zk-QH2" secondAttribute="top" id="aDx-DC-p5z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your picture😎" id="5T5-up-jn6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajX-CH-IlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6890.625" y="821.83098591549299"/>
         </scene>
         <!--My Life-->
         <scene sceneID="CS9-Zf-Xo3">
             <objects>
-                <viewController id="Vp3-QG-PNh" sceneMemberID="viewController">
+                <viewController id="Vp3-QG-PNh" customClass="TabBarViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBj-Gw-75i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydo-XO-re5">
+                                <rect key="frame" x="99.5" y="250" width="121" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="More Info"/>
+                                <connections>
+                                    <segue destination="bli-ax-HM1" kind="show" identifier="loveMountains" id="aDf-hC-Ruu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ooS-2Q-kpk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.84018820524215698" green="0.91116750240325928" blue="0.52865368127822876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ydo-XO-re5" firstAttribute="centerX" secondItem="EBj-Gw-75i" secondAttribute="centerX" id="uYe-pj-xUY"/>
+                            <constraint firstItem="ydo-XO-re5" firstAttribute="centerY" secondItem="EBj-Gw-75i" secondAttribute="centerY" id="x6U-Fl-Ls7"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Life" image="rosette" catalog="system" id="k0x-c0-kFU"/>
-                    <connections>
-                        <segue destination="bkc-IZ-ZhM" kind="show" identifier="MyLife" id="xSV-kU-zFu"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="My Life" id="pYo-ah-1Ye"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLA-ag-9YV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="822"/>
+            <point key="canvasLocation" x="1412" y="1671"/>
         </scene>
         <!--My hobbies-->
         <scene sceneID="hP2-SK-N0l">
@@ -193,17 +281,28 @@
                     <view key="view" contentMode="scaleToFill" id="3qT-6f-sdN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAJ-x7-urv">
+                                <rect key="frame" x="99.5" y="250" width="121" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="More Info"/>
+                                <connections>
+                                    <segue destination="uiL-SD-BgP" kind="show" identifier="photoPose" id="Pk0-pc-jhF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gEz-Mr-U6f"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.52678096294403076" green="0.86990410089492798" blue="0.91408282518386841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KAJ-x7-urv" firstAttribute="centerY" secondItem="3qT-6f-sdN" secondAttribute="centerY" id="Jc5-BO-8sd"/>
+                            <constraint firstItem="KAJ-x7-urv" firstAttribute="centerX" secondItem="3qT-6f-sdN" secondAttribute="centerX" id="vgA-mL-fYk"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My hobbies" image="book" catalog="system" id="ZFL-Zf-Xoa"/>
-                    <connections>
-                        <segue destination="uiL-SD-BgP" kind="show" identifier="MyHobbies" id="x9A-6T-yhh"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="My hobbies" id="ygG-PL-iiO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPs-qa-r8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="822"/>
+            <point key="canvasLocation" x="4203.75" y="821.83098591549299"/>
         </scene>
         <!--Love Mountains🙏-->
         <scene sceneID="6p2-GF-AOo">
@@ -214,7 +313,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="я медитирую" translatesAutoresizingMaskIntoConstraints="NO" id="2hE-ZA-y5R">
-                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aXt-3c-5JH"/>
@@ -226,10 +325,13 @@
                             <constraint firstItem="2hE-ZA-y5R" firstAttribute="leading" secondItem="aXt-3c-5JH" secondAttribute="leading" id="gL4-qp-cRg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Love Mountains🙏" id="62O-SH-lhy"/>
-                    <connections>
-                        <segue destination="fcc-xB-fja" kind="show" identifier="loveFunnyPeople" id="b1f-4B-cjl"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Love Mountains🙏" id="62O-SH-lhy">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="zIQ-TP-b1h">
+                            <connections>
+                                <segue destination="fcc-xB-fja" kind="show" identifier="loveFunnyPeople" id="6kq-Bf-aCj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlv-gI-wxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,7 +346,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="люблю веселые пати" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-Ls-pXB">
-                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z6k-4C-9xu"/>
@@ -256,10 +358,13 @@
                             <constraint firstItem="ADl-Ls-pXB" firstAttribute="top" secondItem="Z6k-4C-9xu" secondAttribute="top" id="YW0-ib-8BD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="I love funny people😅" id="5Oq-h2-w6w"/>
-                    <connections>
-                        <segue destination="ewQ-Fm-trH" kind="show" identifier="loveTravaling" id="BdU-Y6-w9h"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="I love funny people😅" id="5Oq-h2-w6w">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="eYE-lT-wz2">
+                            <connections>
+                                <segue destination="ewQ-Fm-trH" kind="show" identifier="likeToTravel" id="7Ny-Z9-FN7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Al-Kd-2sE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,7 +379,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="люблю путешествовать" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-n7-jPS">
-                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vmz-7X-DDf"/>
@@ -286,58 +391,183 @@
                             <constraint firstItem="jm9-n7-jPS" firstAttribute="bottom" secondItem="vmz-7X-DDf" secondAttribute="bottom" id="rap-2E-XN1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="I like to Travel✈" id="OMe-Ff-sL4"/>
+                    <navigationItem key="navigationItem" title="I like to Travel✈" id="OMe-Ff-sL4">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="sb0-mf-7eK">
+                            <connections>
+                                <segue destination="OEN-KU-sK6" kind="show" identifier="myBestFriend" id="WsK-92-tMU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2W-5j-8Nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4140" y="1670.0704225352113"/>
+        </scene>
+        <!--My Best Friend🙂-->
+        <scene sceneID="co7-B4-iOw">
+            <objects>
+                <viewController id="OEN-KU-sK6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z9f-HU-mBd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Best Friend" translatesAutoresizingMaskIntoConstraints="NO" id="gHj-WQ-u4E">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ptv-5J-mbs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHj-WQ-u4E" firstAttribute="top" secondItem="ptv-5J-mbs" secondAttribute="top" id="3dn-bH-qno"/>
+                            <constraint firstItem="gHj-WQ-u4E" firstAttribute="trailing" secondItem="ptv-5J-mbs" secondAttribute="trailing" id="6UR-yJ-CFy"/>
+                            <constraint firstItem="gHj-WQ-u4E" firstAttribute="leading" secondItem="ptv-5J-mbs" secondAttribute="leading" id="d8J-MA-hrQ"/>
+                            <constraint firstItem="gHj-WQ-u4E" firstAttribute="bottom" secondItem="ptv-5J-mbs" secondAttribute="bottom" id="vAl-A2-5uV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Best Friend🙂" id="LC7-7P-pzr">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="nIv-Ia-TBP">
+                            <connections>
+                                <segue destination="PdQ-ro-ffk" kind="show" identifier="myCat" id="xGP-pg-T5i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi1-bE-SL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5094.375" y="1670.0704225352113"/>
+        </scene>
+        <!--My Cat😼-->
+        <scene sceneID="XBl-4K-Zfw">
+            <objects>
+                <viewController id="PdQ-ro-ffk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sdC-a6-gt4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat" translatesAutoresizingMaskIntoConstraints="NO" id="Yfy-BB-wiz">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xaw-AT-2Yg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yfy-BB-wiz" firstAttribute="bottom" secondItem="xaw-AT-2Yg" secondAttribute="bottom" id="Dqo-0f-6e9"/>
+                            <constraint firstItem="Yfy-BB-wiz" firstAttribute="top" secondItem="xaw-AT-2Yg" secondAttribute="top" id="T1b-zt-lsK"/>
+                            <constraint firstItem="Yfy-BB-wiz" firstAttribute="trailing" secondItem="xaw-AT-2Yg" secondAttribute="trailing" id="bEj-hY-6Yh"/>
+                            <constraint firstItem="Yfy-BB-wiz" firstAttribute="leading" secondItem="xaw-AT-2Yg" secondAttribute="leading" id="f0X-5F-ouG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Cat😼" id="5UJ-oQ-4AR">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tqo-NF-yG2">
+                            <connections>
+                                <segue destination="HME-SP-4mN" kind="show" identifier="myCar" id="jFU-05-hzD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ooi-94-cUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6069.375" y="1670.0704225352113"/>
+        </scene>
+        <!--My Turbo Car🔥-->
+        <scene sceneID="a0s-7o-Rwp">
+            <objects>
+                <viewController id="HME-SP-4mN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GHZ-k1-Lmn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my pushka gonka" translatesAutoresizingMaskIntoConstraints="NO" id="OME-AL-sUb">
+                                <rect key="frame" x="0.0" y="56" width="320" height="443"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iCA-nK-nUJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OME-AL-sUb" firstAttribute="top" secondItem="iCA-nK-nUJ" secondAttribute="top" id="UZa-bi-dHd"/>
+                            <constraint firstItem="OME-AL-sUb" firstAttribute="bottom" secondItem="iCA-nK-nUJ" secondAttribute="bottom" id="Z9t-K7-z3Y"/>
+                            <constraint firstItem="OME-AL-sUb" firstAttribute="leading" secondItem="iCA-nK-nUJ" secondAttribute="leading" id="fKc-gd-bu6"/>
+                            <constraint firstItem="OME-AL-sUb" firstAttribute="trailing" secondItem="iCA-nK-nUJ" secondAttribute="trailing" id="zd7-tS-aHL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Turbo Car🔥" id="lCu-R7-z0E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLU-zW-syF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7008.75" y="1669.0140845070423"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dpB-Pk-QUX">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GMg-hC-Ggc" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="b4j-sl-6p6"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S3u-o5-Qy9">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="7uG-aF-6XA" kind="relationship" relationship="viewControllers" id="Yfa-Gg-uOg"/>
-                        <segue destination="Vp3-QG-PNh" kind="relationship" relationship="viewControllers" id="wob-IY-O9u"/>
-                        <segue destination="axV-Ug-DpH" kind="relationship" relationship="viewControllers" id="y6P-SK-KhG"/>
+                        <segue destination="JAx-Rl-TZd" kind="relationship" relationship="viewControllers" id="wob-IY-O9u"/>
+                        <segue destination="unU-vg-joY" kind="relationship" relationship="viewControllers" id="y6P-SK-KhG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzh-Zf-AJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1411.875" y="61.267605633802816"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YyU-xU-54r">
+        <!--My Life-->
+        <scene sceneID="FnX-Zh-Pke">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bkc-IZ-ZhM" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAx-Rl-TZd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Life" image="rosette" catalog="system" id="k0x-c0-kFU"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="xli-u3-Xag"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="284-DF-Ehq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ow6-KO-nuP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bli-ax-HM1" kind="relationship" relationship="rootViewController" id="Cgn-IQ-I7e"/>
+                        <segue destination="Vp3-QG-PNh" kind="relationship" relationship="rootViewController" id="dZJ-MH-ahc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zXA-lV-lSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQR-g1-7xR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1411.875" y="1671.1267605633802"/>
+            <point key="canvasLocation" x="1411.875" y="821.83098591549299"/>
+        </scene>
+        <!--My hobbies-->
+        <scene sceneID="xly-ps-v97">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="unU-vg-joY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My hobbies" image="book" catalog="system" id="ZFL-Zf-Xoa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJf-Al-T4K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="axV-Ug-DpH" kind="relationship" relationship="rootViewController" id="59g-3F-smI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpU-Gk-ZNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3206.25" y="821.83098591549299"/>
         </scene>
     </scenes>
     <resources>
+        <image name="2020-10-25 11.25.05" width="1280" height="960"/>
+        <image name="Best Friend" width="960" height="1280"/>
+        <image name="Cat" width="960" height="1280"/>
+        <image name="IMG_4873" width="426.5" height="640"/>
         <image name="POOnuxZ-fD8" width="960" height="960"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="bookmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="my pushka gonka" width="768" height="1024"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
         <image name="люблю веселые пати" width="1000" height="750"/>
         <image name="люблю путешествовать" width="1085" height="1080"/>
+        <image name="фото заката" width="1280" height="1280"/>
         <image name="я медитирую" width="1280" height="854"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
