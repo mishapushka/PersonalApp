@@ -102,8 +102,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-40-f5b">
                                 <rect key="frame" x="16" y="150" width="288" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-ry-jfb">
-                                        <rect key="frame" x="43" y="0.0" width="202" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-ry-jfb">
+                                        <rect key="frame" x="108.5" y="0.0" width="71" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -145,13 +145,14 @@
                     <navigationItem key="navigationItem" id="vvE-SH-srm"/>
                     <connections>
                         <outlet property="logOutButton" destination="505-Vd-Ctt" id="eeA-t2-Lad"/>
+                        <outlet property="welcomeUserLabel" destination="Ehr-ry-jfb" id="ljg-dO-XMn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GG-sL-O4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2409.375" y="61.267605633802816"/>
         </scene>
-        <!--Item-->
+        <!--My Life-->
         <scene sceneID="CS9-Zf-Xo3">
             <objects>
                 <viewController id="Vp3-QG-PNh" sceneMemberID="viewController">
@@ -161,11 +162,27 @@
                         <viewLayoutGuide key="safeArea" id="ooS-2Q-kpk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="rosette" catalog="system" id="k0x-c0-kFU"/>
+                    <tabBarItem key="tabBarItem" title="My Life" image="rosette" catalog="system" id="k0x-c0-kFU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLA-ag-9YV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1412" y="822"/>
+        </scene>
+        <!--My hobbies-->
+        <scene sceneID="hP2-SK-N0l">
+            <objects>
+                <viewController id="axV-Ug-DpH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qT-6f-sdN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gEz-Mr-U6f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My hobbies" image="book" catalog="system" id="ZFL-Zf-Xoa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPs-qa-r8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="822"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dpB-Pk-QUX">
@@ -179,6 +196,7 @@
                     <connections>
                         <segue destination="7uG-aF-6XA" kind="relationship" relationship="viewControllers" id="Yfa-Gg-uOg"/>
                         <segue destination="Vp3-QG-PNh" kind="relationship" relationship="viewControllers" id="wob-IY-O9u"/>
+                        <segue destination="axV-Ug-DpH" kind="relationship" relationship="viewControllers" id="y6P-SK-KhG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzh-Zf-AJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -188,6 +206,7 @@
     </scenes>
     <resources>
         <image name="POOnuxZ-fD8" width="960" height="960"/>
+        <image name="book" catalog="system" width="128" height="102"/>
         <image name="bookmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
         <systemColor name="systemBackgroundColor">
