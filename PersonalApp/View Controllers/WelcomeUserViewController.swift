@@ -13,17 +13,13 @@ class WelcomeUserViewController: UIViewController {
     
     @IBOutlet var welcomeUserLabel: UILabel!
     
-    var welcomeUser: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeUserLabel.text = "Welcome, User!"
+        welcomeUserLabel.text = "Welcome, \(user.name)"
     }
     
-    // MARK: Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let tabBarController = segue.destination as! UITabBarController
-        _ = tabBarController.viewControllers?.first as! TabBarViewController
-    }
+
 
 }

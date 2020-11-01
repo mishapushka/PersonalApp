@@ -11,7 +11,7 @@
         <!--go-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="go" id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="go" id="BYZ-38-t0r" customClass="UserViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                                 <state key="normal" title="Forgot User Name?"/>
                                                 <connections>
+                                                    <action selector="forgotUserAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZd-it-HFL"/>
                                                     <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZZ-4O-b31"/>
+                                                    <action selector="showPopUpUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5J-aX-6Hj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-DN-xe4">
@@ -102,8 +104,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-40-f5b">
                                 <rect key="frame" x="16" y="150" width="288" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-ry-jfb">
-                                        <rect key="frame" x="108.5" y="0.0" width="71" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehr-ry-jfb">
+                                        <rect key="frame" x="83.5" y="0.0" width="121" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.99759513139724731" blue="0.17305976152420044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
@@ -247,7 +249,7 @@
         <!--My Life-->
         <scene sceneID="CS9-Zf-Xo3">
             <objects>
-                <viewController id="Vp3-QG-PNh" customClass="TabBarViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vp3-QG-PNh" customClass="AboutMeViewController" customModule="PersonalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBj-Gw-75i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,6 +505,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="b4j-sl-6p6"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S3u-o5-Qy9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
